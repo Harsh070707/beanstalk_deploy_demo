@@ -10,6 +10,7 @@ phases:
       - node -v
       - echo Installing dependencies...
       - npm install
+      - npm i bcrypt@4.0.0
   build:
     commands:
       - ls
