@@ -103,6 +103,8 @@ export class AuthController {
   async facebookLoginCallback(@Req() req): GlobalResponseType {
     return this.authService.facebookLogin(req);
   }
+
+  //Git code
   @Get('github')
   @UseGuards(AuthGuard('github'))
   async githubLogin(): Promise<any> {
